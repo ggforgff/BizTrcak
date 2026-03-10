@@ -1,0 +1,71 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+h1,h2,h3 { margin: 0 0 10px 0; }
+.card { background:white; padding:15px; margin:15px 0; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+
+/* LOGIN */
+#loginPage { display:flex; justify-content:center; align-items:center; height:100vh; }
+.login-card { background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2); text-align:center; }
+.login-card input { padding:10px; margin:5px 0; width:200px; }
+.login-card button { padding:10px 20px; cursor:pointer; }
+
+/* DASHBOARD */
+#dashboard { display:flex; min-height:100vh; }
+.sidebar { width:220px; background:#2c3e50; color:white; padding:20px; }
+.main { flex:1; padding:20px; }
+
+/* Input & Button */
+input { padding:8px; margin-right:5px; border-radius:4px; border:1px solid #ccc; }
+button { padding:8px 12px; border:none; border-radius:4px; background:#3b82f6; color:white; cursor:pointer; }
+
+/* Progress Bar */
+.progress{ width:100%; background:#eee; border-radius:10px; overflow:hidden; margin-top:10px; }
+#progressBar{ height:20px; width:0%; background:#4CAF50; transition:0.5s; }
+
+/* Pie chart container */
+.pie-container{ width:300px; height:300px; margin:auto; }
+
+/* Table */
+table{ width:100%; border-collapse: collapse; margin-top:10px;}
+th,td{ border:1px solid #ccc; padding:8px; text-align:left;}
+button:hover{ opacity:0.8; }/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+h1,h2,h3 { margin: 0 0 10px 0; }
+.card { background:white; padding:15px; margin:15px 0; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+
+/* LOGIN */
+#loginPage { display:flex; justify-content:center; align-items:center; height:100vh; }
+.login-card { background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2); text-align:center; }
+.login-card input { padding:10px; margin:5px 0; width:200px; }
+.login-card button { padding:10px 20px; cursor:pointer; }
+
+/* DASHBOARD */
+#dashboard { display:flex; min-height:100vh; }
+.sidebar { width:220px; background:#2c3e50; color:white; padding:20px; }
+.main { flex:1; padding:20px; }
+
+/* Input & Button */
+input { padding:8px; margin-right:5px; border-radius:4px; border:1px solid #ccc; }
+button { padding:8px 12px; border:none; border-radius:4px; background:#3b82f6; color:white; cursor:pointer; }
+
+/* Progress Bar */
+.progress{ width:100%; background:#eee; border-radius:10px; overflow:hidden; margin-top:10px; }
+#progressBar{ height:20px; width:0%; background:#4CAF50; transition:0.5s; }
+
+/* Pie chart container */
+.pie-container{ width:300px; height:300px; margin:auto; }
+
+/* Table */
+table{ width:100%; border-collapse: collapse; margin-top:10px;}
+th,td{ border:1px solid #ccc; padding:8px; text-align:left;}
+button:hover{ opacity:0.8; }

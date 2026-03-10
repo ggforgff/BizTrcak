@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>BizTrack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginPage">
+    <div class="login-card">
+        <h1>BizTrack</h1>
+        <input id="username" placeholder="Masukkan Nama">
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+
+    <div class="sidebar">
+        <h2>BizTrack</h2>
+        <p id="namaUser"></p>
+        <p id="tanggalLogin"></p>
+    </div>
+
+    <div class="main">
+        <h2>Dashboard</h2>
+
+        <!-- Tambah Produk -->
+        <div class="card">
+            <h3>Tambah Produk</h3>
+            <input id="namaProduk" placeholder="Nama Produk">
+            <input id="jumlahProduk" type="number" placeholder="Jumlah">
+            <button onclick="tambahProduk()">Tambah Produk</button>
+        </div>
+
+        <!-- Daftar Produk -->
+        <div class="card">
+            <h3>Daftar Produk</h3>
+            <table>
+                <tr>
+                    <th>Produk</th>
+                    <th>Jumlah</th>
+                    <th>Aksi</th>
+                </tr>
+                <tbody id="tabelProduk"></tbody>
+            </table>
+        </div>
+
+        <!-- Grafik Bar -->
+        <div class="card">
+            <h3>Grafik Penjualan</h3>
+            <canvas id="grafikPenjualan"></canvas>
+        </div>
+
+        <!-- Pie Chart -->
+        <div class="card">
+            <h3>Pie Chart Penjualan</h3>
+            <div class="pie-container">
+                <canvas id="piePenjualan"></canvas>
+            </div>
+        </div>
+
+        <!-- Progress Bisnis -->
+        <div class="card">
+            <h3>Progress Bisnis</h3>
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+            <p id="badgeLevel">🟢 Starter</p>
+            <p id="produkTerlaris"></p>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
