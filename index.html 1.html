@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<title>BizTrack</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- LOGIN -->
+
+<div id="loginPage">
+
+<div class="login-box">
+
+<h1>BizTrack</h1>
+
+<input id="username" placeholder="Username">
+
+<input id="password" type="password" placeholder="Password (min 8 karakter)">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+</div>
+
+
+
+<!-- DASHBOARD -->
+
+<div id="dashboard">
+
+
+<div class="sidebar">
+
+<h2>BizTrack</h2>
+
+<p id="namaUser"></p>
+<p id="tanggalLogin"></p>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+
+
+<div class="main">
+
+<h2>Dashboard</h2>
+
+
+<div class="card">
+
+<h3>Statistik Penjualan</h3>
+
+<p id="totalPenjualan">Total Penjualan : 0</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Tambah Produk</h3>
+
+<input id="namaProduk" placeholder="Nama Produk">
+
+<input id="jumlahProduk" type="number" placeholder="Jumlah">
+
+<button onclick="tambahProduk()">Tambah</button>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Daftar Produk</h3>
+
+<table>
+
+<tr>
+<th>Produk</th>
+<th>Jumlah</th>
+<th>Aksi</th>
+</tr>
+
+<tbody id="tabelProduk"></tbody>
+
+</table>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Grafik Penjualan</h3>
+
+<canvas id="grafikPenjualan"></canvas>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Pie Chart Penjualan</h3>
+
+<div class="pie-box">
+
+<canvas id="pieChart"></canvas>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Progress Bisnis</h3>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<p id="badgeLevel"></p>
+
+<p id="produkTerlaris"></p>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+<!-- POPUP MASTER -->
+
+<div id="rewardMaster">
+
+<div class="reward-card">
+
+<h1>🏆 MASTER LEVEL</h1>
+
+<p>Selamat! Bisnismu mencapai 500 penjualan!</p>
+
+<button onclick="tutupReward()">Lanjut</button>
+
+</div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
